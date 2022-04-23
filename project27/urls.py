@@ -22,7 +22,7 @@ urlpatterns = [
     path('insert_topic/',insert_topic,name='insert_topic'),
     path('webpage/',webpage,name='webpage'),
     path('insert_access/',insert_access,name='insert_access'),
-    path('display_topic/',display_topic,name='display_topic'),
-    path('display_webpage/',display_webpage,name='display_webpage'),
-    path('display_access/',display_access,name='display_access'),
+    path('topic_dropdown/',topic_dropdown,name='topic_dropdown'),
+    path('select_multiple/',select_multiple,name='select_multiple'),
+     path('checkbox/',checkbox,name='checkbox'),
 ]

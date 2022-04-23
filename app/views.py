@@ -17,7 +17,7 @@ def insert_topic(request):
     return render(request,'insert_topic.html')
 def webpage(request):
     Topics=Topic.objects.all()
-    d={"ts":"Topics"}
+    d={"ts":Topics}
     if request.method=='POST':
         TN=request.POST['topic']
         T=Topic.objects.get_or_create(topic_name=TN)[0]
@@ -32,7 +32,7 @@ def webpage(request):
     return render(request,'webpage.html',d)
 def insert_access(request):
     Topics=Topic.objects.all()
-    d={"ts":"Topics"}
+    d={"ts":Topics}
     if request.method=='POST':
         TN=request.POST['topic']
         T=Topic.objects.get_or_create(topic_name=TN)[0]
